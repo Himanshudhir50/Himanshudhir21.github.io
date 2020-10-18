@@ -3,7 +3,7 @@ Practice dunder Methods First Link in Week 1
 """
 
 
-class account:
+class Account:
     """ A simple account class """
 
     def __int__(self, owner, amount=0):
@@ -15,7 +15,7 @@ class account:
         self._transaction = []
 
     def __str__(self):
-        return 'Account of {} with starting amount{}'.format(self.owner.self.amount)
+        return 'Account of {} with starting amount{}'.format(self.owner, self.amount)
 
     def __repr__(self):
         return 'Account of{} with starting{}'.format(self.owner, self.amount)
@@ -34,7 +34,7 @@ class account:
         Sum is use to add all the transactions but if wee have float points then
         we need to use math.fsum instead of sum
         """
-        return self.amount + sum(self.transactions)
+        return self.amount + sum(self._transaction)
 
     def __len__(self):
         return len(self._transaction)
@@ -54,13 +54,17 @@ class account:
         return self.balance < other.balance
 
     def __add__(self, other):
-        owner = '{}&{}'.formats(self.owner, other.owner)
+        change_owner = '{}&{}'.format(self.owner, other.owner)
         start_amount = self.amount + other.amount
-        return account(owner, start_amount)
+        return Account(change_owner, start_amount)
 
     def _call_(self):
-        print('Start amount: {}'.format(self.amount))
+        print(f'Start amount: {self.amount}')
         print('Transactions: ')
         for transaction in self:
             print('/balance:{}'.format(self.balance))
 
+
+if __name__ == '__main__':
+    x = Account('Himanshu', 10)
+    print(x)
