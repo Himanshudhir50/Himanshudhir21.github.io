@@ -6,7 +6,7 @@ Practice dunder Methods First Link in Week 1
 class Account:
     """ A simple account class """
 
-    def __int__(self, owner, amount=0):
+    def __init__(self, owner, amount=0):
         """ Need owner name for an account"""
         self.owner = owner
         self.amount = amount
