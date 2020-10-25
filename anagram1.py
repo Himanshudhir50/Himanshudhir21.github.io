@@ -1,3 +1,4 @@
+"""Big of this anagram program is n^2"""
 def anagram(s1, s2):
     stillok = True
     if len(s1) != len(s2):
