@@ -3,7 +3,7 @@ import time
 
 def concatination():
     start = time.time()
-    alist = []
+    alist = ['Himanshu','Hello']
     for i in range(10000):
         alist = alist + [i]
     end = time.time()
