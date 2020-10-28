@@ -12,7 +12,7 @@ def hotPotato(namelist, num):
 
         simqueue.dequeue()
 
-    return simqueue.dequeue
+    return simqueue.dequeue()
 
 
 if __name__ == '__main__':
