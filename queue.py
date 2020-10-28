@@ -2,10 +2,10 @@ class Queue:
     def __init__(self):
         self.items = []
 
-    def enque(self, item):
+    def enqueue(self, item):
         self.items.insert(0, item)
 
-    def deque(self):
+    def dequeue(self):
         return self.items.pop()
 
     def isEmpty(self):
@@ -17,7 +17,7 @@ class Queue:
 
 if __name__ == '__main__':
     queue = Queue()
-    queue.enque('Hello')
-    queue.enque('hi')
-    queue.deque()
+    queue.enqueue('Hello')
+    queue.enqueue('hi')
+    queue.dequeue()
     print(queue.size())
