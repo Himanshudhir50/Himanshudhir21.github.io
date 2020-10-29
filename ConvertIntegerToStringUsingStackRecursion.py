@@ -10,9 +10,9 @@ def toStr(n,base):
         else:
             rStack.push(convertString[n % base])
         n = n // base
-    res = ""
+    String = ""
     while not rStack.isEmpty():
-        res = res + str(rStack.pop())
-    return res
+        String = String + str(rStack.pop())
+    return String
 
 print(toStr(1453,16))
