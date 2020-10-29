@@ -5,7 +5,7 @@ class UnoderedLinkedlist:
         self.head = None
 
     def isEmpty(self):
-        self. head == None
+        return self. head == None
 
 
     def add(self, item):
