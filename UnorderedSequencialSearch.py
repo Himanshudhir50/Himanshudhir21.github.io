@@ -12,5 +12,5 @@ def unorderedsequencialsearch(alist, item):
     return found
 
 if __name__ == '__main__':
-    Testlist = [3,4,5,5,6,7,8,8,,423]
+    Testlist = [3,4,5,5,6,7,8,8,423]
     print(sequencialsearch(Testlist, 55))
